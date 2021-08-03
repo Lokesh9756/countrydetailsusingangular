@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="search">
+        <input [(ngModel)]="search" (keyup)="handle()" placeholder="Country Name..">
+        <select id="selector" value="filter" (change)="region($event)">
+            <option value='Filter by region'>Filter by region</option>
+            <option value="africa">Africa</option>
+            <option value="americas">America</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+        </select>
+    </div>
+    <div class="countrycontainer">
+        <div class="country" *ngFor=" let country of countries">
+            <a href="detail/{{country[1].name}}">
+                <div>
+                    <img src="{{country[1].flag}}" alt="img" style="width: 100%;">
+                    <div style="text-align: center;">
+                        <p>country name:{{country[1].name}}</p>
+                        <p>Population:{{country[1].population}}</p>
+                        <p>Region:{{country[1].region}}</p>
+                        <p>Capital:{{country[1].capital}}</p>
+
+                    </div>
+                </div>
+            </a>
+        </div>

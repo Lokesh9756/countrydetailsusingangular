@@ -1,0 +1,21 @@
+.country{
+    width: 100%;
+    display: flex;
+}
+.page{
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    height: 60vh;
+    width: 40vw;
+    margin: 2%;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    position: relative;
+    left: 10%;
+}

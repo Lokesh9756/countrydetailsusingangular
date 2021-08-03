@@ -1,0 +1,28 @@
+
+.container{
+    width: 100vw;
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+}
+.countrycontainer{
+
+ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 10px;
+}
+.country{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    background-color:rgb(207, 202, 181);
+    margin: 30px;
+}
+img{
+    width: 10vw;
+}

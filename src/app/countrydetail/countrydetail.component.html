@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<META HTTP-EQUIV=”refresh” CONTENT=”2″>
+<div><a href=" "> <button><i class="fa fa-arrow-left"></i>Back to home</button></a></div>
+<div class="country">
+    <img src="{{country.flag}}" alt="img">
+    <div>
+        <div
+            style="display: flex;flex-direction: row;position: relative; width: 40vw;margin: 5%;justify-content: space-around;height: 50vh; ">
+            <div>
+                <h2>{{country.name}}</h2>
+                <div style="display: flex;flex-direction: row;">
+                    <p style="font-weight: bold;">Nativename:
+                    </p>
+                    <p>{{country.nativeName}}</p>
+                </div>
+
+                <div style="display: flex;flex-direction: row;">
+                    <p style="font-weight: bold;">Population:</p>
+                    <p>{{country.population}}</p>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <p style="font-weight: bold;">Region:</p>
+                    <p>{{country.region}}</p>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <p style="font-weight: bold;">Subregion:</p>
+                    <p>{{country.subregion}}</p>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <p style="font-weight: bold;">Capital:</p>
+                    <p>{{country.capital}}</p>
+                </div>
+
+            </div>
+            <div style="margin-top:20%;">
+                <div style="display: flex;flex-direction: row;">
+                    <p style="font-weight: bold;">Top Level Domain: </p>
+                    <p>{{country.topLevelDomain}}</p>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <p style="font-weight: bold;">C urrencies:</p>
+                    <p *ngFor="let currency of country.currencies">,{{currency.name}}</p>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <p style="font-weight: bold;">Subregion:</p>
+                    <p *ngFor=" let language of country.languages">,{{language.name}}</p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-left: 13%;display: flex;flex-direction: row;">
+            <p style="font-weight: bold;">Border Countries:</p>
+            <div style="margin-top: 3%; display: flex;flex-direction: row;height: 3vh;"
+                *ngFor="let border of country.borders">
+                <button style="margin-right: 10Px;" (click)="bordercountry($event)">{{border}}</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>

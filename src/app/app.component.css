@@ -1,0 +1,16 @@
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.light{
+    background-color: #fff;
+    color: black;
+}
+button{
+    height: 6%;
+    margin-top: 3%;
+}
