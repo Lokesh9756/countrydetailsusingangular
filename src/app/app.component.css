@@ -1,6 +1,7 @@
 .dark{
     background-color: #222;
     color: #e6e6e6;
+    height: 100%;
 }
 header{
     display: flex;
@@ -9,6 +10,7 @@ header{
 .light{
     background-color: #fff;
     color: black;
+    height: 100%;
 }
 button{
     height: 6%;
