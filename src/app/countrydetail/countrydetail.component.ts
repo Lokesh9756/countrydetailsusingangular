@@ -40,4 +40,7 @@ export class CountrydetailComponent implements OnInit {
     })
 
   }
+  back() {
+    window.history.back();
+  }
 }
